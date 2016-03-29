@@ -545,10 +545,12 @@ body.nav-opened .nav-cover {
     z-index: 5;
     width: 240px;
     opacity: 0;
-    background: #111;
+    background: #818386;
     margin-bottom: 0;
     text-align: left;
     overflow-y: auto;
+    opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
     -webkit-transition: -webkit-transform 0.5s ease,
                         opacity 0.3s ease 0.7s;
             transition: transform 0.5s ease,
@@ -573,6 +575,7 @@ body.nav-opened .nav {
 }
 
 .nav-title {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     position: absolute;
     top: 45px;
     left: 30px;
